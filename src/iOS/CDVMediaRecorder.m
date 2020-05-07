@@ -18,7 +18,7 @@
  */
 
 #import "CDVMediaRecorder.h"
-#import "CameraViewController.h"
+//#import "CameraViewController.h"
 
 
 @implementation CDVMediaRecorder
@@ -29,7 +29,7 @@
     __weak CDVMediaRecorder* weakSelf = self;
     self.command = command;
     self.videoCam = command.arguments[0];
-
+    /*
     // switch to camera view
     CameraViewController *cameraViewController = [[CameraViewController alloc] init];
     cameraViewController.mediaStreamInterface = self;
@@ -42,19 +42,19 @@
 
 
     }];
-
+    */
 }
 - (void)receiveError
 {
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Recording Failed"];
-    [self.commandDelegate sendPluginResult:result callbackId:self.command.callbackId];
+    // [self.commandDelegate sendPluginResult:result callbackId:self.command.callbackId];
 }
 
 - (void)sendPluginResult:(NSDictionary*)dict keepResult:(BOOL)keep
 {
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:dict];
     [result setKeepCallback:[NSNumber numberWithBool:keep]];
-    [self.commandDelegate sendPluginResult:result callbackId:self.command.callbackId];
+    // [self.commandDelegate sendPluginResult:result callbackId:self.command.callbackId];
 }
 
 

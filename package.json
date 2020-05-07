@@ -1,6 +1,6 @@
 {
   "name": "phonegap-plugin-media-recorder",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Phonegap Media Recorder Plugin",
   "cordova": {
     "id": "phonegap-plugin-media-recorder",
@@ -32,11 +32,18 @@
   "license": "Apache-2.0",
   "engines": {
     "cordovaDependencies": {
-      "1.2.0":{
+      "1.2.0": {
         "cordova": ">=7.1.0",
+        "cordova-ios": ">=4.5.0",
         "cordova-android": ">=6.3.0"
       },
       "2.0.0": {
+        "cordova": ">=9.0.0",
+        "cordova-ios": ">=5.1.1",
+        "cordova-android": ">=8.0.0",
+        "apple-ios": ">=10.2"
+      },
+      "3.0.0": {
         "cordova": ">100"
       }
     }

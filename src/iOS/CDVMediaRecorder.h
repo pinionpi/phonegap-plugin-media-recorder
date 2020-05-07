@@ -20,10 +20,13 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDVPlugin.h>
 #import <Cordova/CDVPlugin+Resources.h>
-#import "CDVMediaStream.h"
+// #import "CDVMediaStream.h"
 
-@interface CDVMediaRecorder : CDVMediaStream <UINavigationControllerDelegate> {
+// @interface CDVMediaRecorder : CDVMediaStream <UINavigationControllerDelegate> {
+//
+// }
 
+@interface CDVMediaRecorder  : NSObject {
 }
 
 @property (strong, nonatomic) CDVInvokedUrlCommand * command;
